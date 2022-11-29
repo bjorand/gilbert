@@ -1,0 +1,10 @@
+sounddevice
+paho-mqtt
+asyncio-paho
+torch
+transformers
+deep-translator
+pygame
+gTTS
+pyttsx3
+

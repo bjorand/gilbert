@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+sounddevice = "*"
+paho-mqtt = "*"
+asyncio-paho = "*"
+torch = "*"
+transformers = "*"
+deep-translator = "*"
+pygame = "*"
+gtts = "*"
+pyttsx3 = "*"
+websockets = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"

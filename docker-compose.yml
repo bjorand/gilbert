@@ -1,0 +1,21 @@
+services:
+  mqtt:
+    image: eclipse-mosquitto
+    ports:
+      - "1883:1883"
+    volumes:
+      - ./docker/mosquitto.conf:/mosquitto/config/mosquitto.conf
+  stt:
+    image: alphacep/kaldi-fr:latest
+    ports:
+      - "2700:2700"
+    volumes:
+      - ./vosk-model:/opt/vosk-model-fr/model
+  # stt:
+  #   build: 
+  #     context: stt
+  #     dockerfile: Dockerfile
+  #   environment:
+  #     - MQTT_ADDRESS=mqtt
+  #     - VOSK_LANG=fr
+  #     - VOSK_SAMPLE_RATE=16000
