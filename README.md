@@ -88,7 +88,7 @@ docker compose up --build
 2. Start the microphone module
 
 ```
-pipenv run modules/websocket.py
+pipenv run modules/microphone.py
 ```
 
 3. Start the translate module
